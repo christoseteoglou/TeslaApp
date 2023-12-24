@@ -11,6 +11,13 @@
 		92114C922B389B6C002B5146 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92114C912B389B6C002B5146 /* ContentView.swift */; };
 		92114C942B389B6D002B5146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92114C932B389B6D002B5146 /* Assets.xcassets */; };
 		92114C972B389B6D002B5146 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92114C962B389B6D002B5146 /* Preview Assets.xcassets */; };
+		92114CA22B389E43002B5146 /* VoiceCommandButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92114CA12B389E43002B5146 /* VoiceCommandButtonView.swift */; };
+		92114CA52B389FF8002B5146 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92114CA42B389FF8002B5146 /* HomeHeaderView.swift */; };
+		92114CA82B38A3AA002B5146 /* GeneralButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92114CA72B38A3AA002B5146 /* GeneralButtonView.swift */; };
+		92114CAB2B38A603002B5146 /* CarSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92114CAA2B38A603002B5146 /* CarSectionView.swift */; };
+		92114CAE2B38AC4B002B5146 /* CategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92114CAD2B38AC4B002B5146 /* CategoryHeader.swift */; };
+		92114CB02B38AF06002B5146 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92114CAF2B38AF06002B5146 /* CategoryView.swift */; };
+		92114CB32B38B963002B5146 /* AllSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92114CB22B38B963002B5146 /* AllSettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		92114C912B389B6C002B5146 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		92114C932B389B6D002B5146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92114C962B389B6D002B5146 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		92114CA12B389E43002B5146 /* VoiceCommandButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCommandButtonView.swift; sourceTree = "<group>"; };
+		92114CA42B389FF8002B5146 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		92114CA72B38A3AA002B5146 /* GeneralButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralButtonView.swift; sourceTree = "<group>"; };
+		92114CAA2B38A603002B5146 /* CarSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSectionView.swift; sourceTree = "<group>"; };
+		92114CAD2B38AC4B002B5146 /* CategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeader.swift; sourceTree = "<group>"; };
+		92114CAF2B38AF06002B5146 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		92114CB22B38B963002B5146 /* AllSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,9 @@
 		92114C8E2B389B6C002B5146 /* MyTeslaApp */ = {
 			isa = PBXGroup;
 			children = (
+				92114C9F2B389E1F002B5146 /* Model */,
+				92114C9E2B389E1B002B5146 /* View */,
+				92114C9D2B389E16002B5146 /* ViewModel */,
 				92114C8F2B389B6C002B5146 /* MyTeslaAppApp.swift */,
 				92114C912B389B6C002B5146 /* ContentView.swift */,
 				92114C932B389B6D002B5146 /* Assets.xcassets */,
@@ -65,6 +82,82 @@
 				92114C962B389B6D002B5146 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		92114C9D2B389E16002B5146 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		92114C9E2B389E1B002B5146 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92114CB12B38B958002B5146 /* AllSettings */,
+				92114CAC2B38AC34002B5146 /* Category */,
+				92114CA92B38A5E9002B5146 /* CarSection */,
+				92114CA62B38A39E002B5146 /* GeneralButton */,
+				92114CA32B389FE5002B5146 /* HomeHeader */,
+				92114CA02B389E2E002B5146 /* VoiceCommandButton */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92114C9F2B389E1F002B5146 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92114CA02B389E2E002B5146 /* VoiceCommandButton */ = {
+			isa = PBXGroup;
+			children = (
+				92114CA12B389E43002B5146 /* VoiceCommandButtonView.swift */,
+			);
+			path = VoiceCommandButton;
+			sourceTree = "<group>";
+		};
+		92114CA32B389FE5002B5146 /* HomeHeader */ = {
+			isa = PBXGroup;
+			children = (
+				92114CA42B389FF8002B5146 /* HomeHeaderView.swift */,
+			);
+			path = HomeHeader;
+			sourceTree = "<group>";
+		};
+		92114CA62B38A39E002B5146 /* GeneralButton */ = {
+			isa = PBXGroup;
+			children = (
+				92114CA72B38A3AA002B5146 /* GeneralButtonView.swift */,
+			);
+			path = GeneralButton;
+			sourceTree = "<group>";
+		};
+		92114CA92B38A5E9002B5146 /* CarSection */ = {
+			isa = PBXGroup;
+			children = (
+				92114CAA2B38A603002B5146 /* CarSectionView.swift */,
+			);
+			path = CarSection;
+			sourceTree = "<group>";
+		};
+		92114CAC2B38AC34002B5146 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				92114CAD2B38AC4B002B5146 /* CategoryHeader.swift */,
+				92114CAF2B38AF06002B5146 /* CategoryView.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		92114CB12B38B958002B5146 /* AllSettings */ = {
+			isa = PBXGroup;
+			children = (
+				92114CB22B38B963002B5146 /* AllSettingsView.swift */,
+			);
+			path = AllSettings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +230,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92114CB32B38B963002B5146 /* AllSettingsView.swift in Sources */,
+				92114CA52B389FF8002B5146 /* HomeHeaderView.swift in Sources */,
+				92114CAE2B38AC4B002B5146 /* CategoryHeader.swift in Sources */,
+				92114CAB2B38A603002B5146 /* CarSectionView.swift in Sources */,
 				92114C922B389B6C002B5146 /* ContentView.swift in Sources */,
+				92114CA82B38A3AA002B5146 /* GeneralButtonView.swift in Sources */,
 				92114C902B389B6C002B5146 /* MyTeslaAppApp.swift in Sources */,
+				92114CB02B38AF06002B5146 /* CategoryView.swift in Sources */,
+				92114CA22B389E43002B5146 /* VoiceCommandButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +378,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +406,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

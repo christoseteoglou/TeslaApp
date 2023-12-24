@@ -9,16 +9,45 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            ScrollView {
+                VStack(spacing: 20) {
+                    HomeHeaderView()
+                    CustomDivider()
+                    CarSectionView()
+                    CustomDivider()
+                    Button(action: {}) {
+                        CategoryView(title: "Quick Shortcuts", showEdit: true, actionItems: quickShortcuts)
+                    }
+                    CustomDivider()
+                    Button(action: {}) {
+                        CategoryView(title: "Recent Actions", actionItems: recentActions)
+                    }
+                    CustomDivider()
+                    
+                    AllSettingsView()
+                }
+                .padding()
+            }
+            
+            VoiceCommandButtonView()
         }
-        .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color("DarkGray"))
+        .foregroundStyle(.white)
     }
 }
 
 #Preview {
     ContentView()
+}
+
+struct CustomDivider: View {
+    var body: some View {
+        Rectangle()
+            .frame(maxWidth: .infinity)
+            .frame(height: 0.25)
+            .background(.white)
+            .opacity(0.1)
+    }
 }
