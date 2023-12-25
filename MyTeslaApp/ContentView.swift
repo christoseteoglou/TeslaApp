@@ -9,32 +9,42 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            ScrollView {
-                VStack(spacing: 20) {
-                    HomeHeaderView()
-                    CustomDivider()
-                    CarSectionView()
-                    CustomDivider()
-                    Button(action: {}) {
-                        CategoryView(title: "Quick Shortcuts", showEdit: true, actionItems: quickShortcuts)
+        NavigationStack {
+            ZStack {
+                ScrollView {
+                    VStack(spacing: 20) {
+                        HomeHeaderView()
+                        
+                        CustomDivider()
+                        
+                        CarSectionView()
+                        
+                        CustomDivider()
+                        Button(action: {}) {
+                            CategoryView(title: "Quick Shortcuts", showEdit: true, actionItems: quickShortcuts)
+                        }
+                        
+                        CustomDivider()
+                        
+                        Button(action: {}) {
+                            CategoryView(title: "Recent Actions", actionItems: recentActions)
+                        }
+                        
+                        CustomDivider()
+                        
+                        AllSettingsView()
+                        
+                        ReorderButtonView()
                     }
-                    CustomDivider()
-                    Button(action: {}) {
-                        CategoryView(title: "Recent Actions", actionItems: recentActions)
-                    }
-                    CustomDivider()
-                    
-                    AllSettingsView()
+                    .padding()
                 }
-                .padding()
+                
+                VoiceCommandButtonView()
             }
-            
-            VoiceCommandButtonView()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color("BGDarkGray"))
+            .foregroundStyle(.white)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color("DarkGray"))
-        .foregroundStyle(.white)
     }
 }
 

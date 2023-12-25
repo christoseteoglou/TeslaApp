@@ -18,6 +18,9 @@
 		92114CAE2B38AC4B002B5146 /* CategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92114CAD2B38AC4B002B5146 /* CategoryHeader.swift */; };
 		92114CB02B38AF06002B5146 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92114CAF2B38AF06002B5146 /* CategoryView.swift */; };
 		92114CB32B38B963002B5146 /* AllSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92114CB22B38B963002B5146 /* AllSettingsView.swift */; };
+		92CCEB5F2B39530B00B1CFB6 /* ReorderButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CCEB5E2B39530B00B1CFB6 /* ReorderButtonView.swift */; };
+		92CCEB622B39578700B1CFB6 /* CarControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CCEB612B39578700B1CFB6 /* CarControlView.swift */; };
+		92CCEB642B395C6400B1CFB6 /* CarLockButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CCEB632B395C6400B1CFB6 /* CarLockButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		92114CAD2B38AC4B002B5146 /* CategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeader.swift; sourceTree = "<group>"; };
 		92114CAF2B38AF06002B5146 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		92114CB22B38B963002B5146 /* AllSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSettingsView.swift; sourceTree = "<group>"; };
+		92CCEB5E2B39530B00B1CFB6 /* ReorderButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderButtonView.swift; sourceTree = "<group>"; };
+		92CCEB612B39578700B1CFB6 /* CarControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarControlView.swift; sourceTree = "<group>"; };
+		92CCEB632B395C6400B1CFB6 /* CarLockButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarLockButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,8 @@
 		92114C9E2B389E1B002B5146 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				92CCEB602B39577C00B1CFB6 /* CarControl */,
+				92CCEB5D2B39530000B1CFB6 /* ReorderButton */,
 				92114CB12B38B958002B5146 /* AllSettings */,
 				92114CAC2B38AC34002B5146 /* Category */,
 				92114CA92B38A5E9002B5146 /* CarSection */,
@@ -158,6 +166,23 @@
 				92114CB22B38B963002B5146 /* AllSettingsView.swift */,
 			);
 			path = AllSettings;
+			sourceTree = "<group>";
+		};
+		92CCEB5D2B39530000B1CFB6 /* ReorderButton */ = {
+			isa = PBXGroup;
+			children = (
+				92CCEB5E2B39530B00B1CFB6 /* ReorderButtonView.swift */,
+			);
+			path = ReorderButton;
+			sourceTree = "<group>";
+		};
+		92CCEB602B39577C00B1CFB6 /* CarControl */ = {
+			isa = PBXGroup;
+			children = (
+				92CCEB612B39578700B1CFB6 /* CarControlView.swift */,
+				92CCEB632B395C6400B1CFB6 /* CarLockButtonView.swift */,
+			);
+			path = CarControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,9 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92CCEB5F2B39530B00B1CFB6 /* ReorderButtonView.swift in Sources */,
 				92114CB32B38B963002B5146 /* AllSettingsView.swift in Sources */,
 				92114CA52B389FF8002B5146 /* HomeHeaderView.swift in Sources */,
 				92114CAE2B38AC4B002B5146 /* CategoryHeader.swift in Sources */,
+				92CCEB642B395C6400B1CFB6 /* CarLockButtonView.swift in Sources */,
+				92CCEB622B39578700B1CFB6 /* CarControlView.swift in Sources */,
 				92114CAB2B38A603002B5146 /* CarSectionView.swift in Sources */,
 				92114C922B389B6C002B5146 /* ContentView.swift in Sources */,
 				92114CA82B38A3AA002B5146 /* GeneralButtonView.swift in Sources */,

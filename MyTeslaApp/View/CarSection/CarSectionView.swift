@@ -15,7 +15,7 @@ struct CarSectionView: View {
                     Image(systemName: "battery.75")
                     Text("237 miles".uppercased())
                 }
-                .foregroundStyle(Color("Green"))
+                .foregroundStyle(Color("ImportantGreen"))
                 .font(.system(size: 14,weight: .semibold, design: .rounded))
                 
                 Spacer()

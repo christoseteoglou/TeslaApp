@@ -17,7 +17,7 @@ struct HomeHeaderView: View {
                     .padding(.vertical, 4)
                     .padding(.horizontal, 8)
                     .foregroundStyle(.white)
-                    .background(Color("Red"))
+                    .background(Color("WarningRed"))
                     .clipShape(Capsule())
                 
                 Text("Mach Five")
